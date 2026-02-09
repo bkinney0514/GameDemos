@@ -1,0 +1,1 @@
+Obstacle Assault is a small platforming game, meant to get more challenging as you progress. If at any point the player falls, they must restart. Once you reach the platform with the golden statue, you win!
