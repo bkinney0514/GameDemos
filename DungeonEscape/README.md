@@ -1,0 +1,1 @@
+Dungeon Escape is an escape room style game, meant to be used with a controller. There are a few puzzles, involving pressure plates, collectable items, and locks which take said items. The map is a bit larger that it needs to be for the amount of puzzles, but that just gives room to add more. Once you reach the outside of the dungeon, you win!
