@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+<RuntimeProperties>
+<CrashVersion>3</CrashVersion>
+<ExecutionGuid>701BBEAD486DF32641562EBB538BEABA</ExecutionGuid>
+<CrashGUID>UECC-Windows-AFC3432F4104619BBF5CF8A21C58078E_0000</CrashGUID>
+<IsEnsure>false</IsEnsure>
+<IsStall>false</IsStall>
+<IsAssert>true</IsAssert>
+<CrashType>Assert</CrashType>
+<ErrorMessage>Fatal error: [File:D:\build\++UE5\Sync\Engine\Source\Runtime\CoreUObject\Private\Serialization\AsyncLoading2.cpp] [Line: 2516] 
+ObjectSerializationError: /Game/MyStuff/Blueprints/BP_Player (0x912AE36A0B42BEAC) /Game/MyStuff/Blueprints/BP_Player (0x912AE36A0B42BEAC) - BP_Player_C /Game/MyStuff/Blueprints/BP_Player.Default__BP_Player_C: Bad export index 83886079/10.
+
+
+</ErrorMessage>
+<CrashReporterMessage></CrashReporterMessage>
+<CrashReporterMessage>Attended</CrashReporterMessage>
+<ProcessId>35240</ProcessId>
+<SecondsSinceStart>0</SecondsSinceStart>
+<IsInternalBuild>false</IsInternalBuild>
+<IsPerforceBuild>false</IsPerforceBuild>
+<IsWithDebugInfo>false</IsWithDebugInfo>
+<IsSourceDistribution>false</IsSourceDistribution>
+<GameName>UE-DungeonEscape</GameName>
+<ExecutableName>DungeonEscape</ExecutableName>
+<BuildConfiguration>Development</BuildConfiguration>
+<GameSessionID></GameSessionID>
+<PlatformName>Windows</PlatformName>
+<PlatformFullName>Windows</PlatformFullName>
+<PlatformNameIni>Windows</PlatformNameIni>
+<EngineMode>Game</EngineMode>
+<EngineModeEx>Unset</EngineModeEx>
+<DeploymentName></DeploymentName>
+<EngineVersion>5.6.1-44394996+++UE5+Release-5.6</EngineVersion>
+<EngineCompatibleVersion>5.6.1-44394996+++UE5+Release-5.6</EngineCompatibleVersion>
+<CommandLine> DungeonEscape</CommandLine>
+<LanguageLCID>9</LanguageLCID>
+<AppDefaultLocale>en-US</AppDefaultLocale>
+<BuildVersion>++UE5+Release-5.6-CL-44394996</BuildVersion>
+<Symbols>**UE5*Release-5.6-CL-44394996-Win64-Development</Symbols>
+<IsUERelease>false</IsUERelease>
+<IsRequestingExit>false</IsRequestingExit>
+<UserName></UserName>
+<BaseDir>C:/UnrealProjects/DungeonEscape/Windows/DungeonEscape/Binaries/Win64/</BaseDir>
+<RootDir>C:/UnrealProjects/DungeonEscape/Windows/</RootDir>
+<MachineId>61C993114B329EFE7ADFBC8355802AD0</MachineId>
+<LoginId>61c993114b329efe7adfbc8355802ad0</LoginId>
+<EpicAccountId>945d2ca40cb64b5d9239e9d3e22289bd</EpicAccountId>
+<SourceContext></SourceContext>
+<UserDescription></UserDescription>
+<UserActivityHint></UserActivityHint>
+<CrashDumpMode>0</CrashDumpMode>
+<GameStateName></GameStateName>
+<Misc.NumberOfCores>8</Misc.NumberOfCores>
+<Misc.NumberOfCoresIncludingHyperthreads>16</Misc.NumberOfCoresIncludingHyperthreads>
+<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+<Misc.CPUVendor>AuthenticAMD</Misc.CPUVendor>
+<Misc.CPUBrand>AMD Ryzen 7 7800X3D 8-Core Processor           </Misc.CPUBrand>
+<Misc.PrimaryGPUBrand>NVIDIA GeForce RTX 3080</Misc.PrimaryGPUBrand>
+<Misc.OSVersionMajor>Windows 11 (25H2) [10.0.26200.7623]</Misc.OSVersionMajor>
+<Misc.OSVersionMinor></Misc.OSVersionMinor>
+<Misc.AnticheatProvider></Misc.AnticheatProvider>
+<MemoryStats.TotalPhysical>33515134976</MemoryStats.TotalPhysical>
+<MemoryStats.TotalVirtual>56063713280</MemoryStats.TotalVirtual>
+<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+<MemoryStats.TotalPhysicalGB>32</MemoryStats.TotalPhysicalGB>
+<MemoryStats.AvailablePhysical>12280975360</MemoryStats.AvailablePhysical>
+<MemoryStats.AvailableVirtual>9741930496</MemoryStats.AvailableVirtual>
+<MemoryStats.UsedPhysical>1068601344</MemoryStats.UsedPhysical>
+<MemoryStats.PeakUsedPhysical>1100800000</MemoryStats.PeakUsedPhysical>
+<MemoryStats.UsedVirtual>1305030656</MemoryStats.UsedVirtual>
+<MemoryStats.PeakUsedVirtual>1306243072</MemoryStats.PeakUsedVirtual>
+<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+<NumMinidumpFramesToIgnore>4</NumMinidumpFramesToIgnore>
+<CallStack></CallStack>
+<PCallStack>
+
+DungeonEscape  0x00007ff7a2c70000 + 231fb41         
+DungeonEscape  0x00007ff7a2c70000 + 2301ab7         
+DungeonEscape  0x00007ff7a2c70000 + 813c9fb         
+DungeonEscape  0x00007ff7a2c70000 + 23142a7         
+DungeonEscape  0x00007ff7a2c70000 + 2318009         
+DungeonEscape  0x00007ff7a2c70000 + 231916c         
+DungeonEscape  0x00007ff7a2c70000 + 231a604         
+DungeonEscape  0x00007ff7a2c70000 + 2337307         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</PCallStack>
+<PCallStackHash>7C448B7DB371A6740C000BD07D69369C5AD630AD</PCallStackHash>
+<Threads><Thread><CallStack>DungeonEscape  0x00007ff7a2c70000 + 9d39d93         
+DungeonEscape  0x00007ff7a2c70000 + 9d48583         
+DungeonEscape  0x00007ff7a2c70000 + 9d08bf7         
+DungeonEscape  0x00007ff7a2c70000 + 9d34f3f         
+DungeonEscape  0x00007ff7a2c70000 + 9d49c86         
+DungeonEscape  0x00007ff7a2c70000 + 9d49b03         
+DungeonEscape  0x00007ff7a2c70000 + 9eb8d55         
+DungeonEscape  0x00007ff7a2c70000 + a001fd9         
+DungeonEscape  0x00007ff7a2c70000 + 8131c55         
+DungeonEscape  0x00007ff7a2c70000 + 20a9e61         
+DungeonEscape  0x00007ff7a2c70000 + 23161d1         
+DungeonEscape  0x00007ff7a2c70000 + 231916c         
+DungeonEscape  0x00007ff7a2c70000 + 231a604         
+DungeonEscape  0x00007ff7a2c70000 + 232c1a8         
+DungeonEscape  0x00007ff7a2c70000 + 2339d87         
+DungeonEscape  0x00007ff7a2c70000 + 231d393         
+DungeonEscape  0x00007ff7a2c70000 + 1e8132b         
+DungeonEscape  0x00007ff7a2c70000 + 1e80fac         
+DungeonEscape  0x00007ff7a2c70000 + 228527c         
+DungeonEscape  0x00007ff7a2c70000 + 228484e         
+DungeonEscape  0x00007ff7a2c70000 + 2284b51         
+DungeonEscape  0x00007ff7a2c70000 + 2294923         
+DungeonEscape  0x00007ff7a2c70000 + 229e2fa         
+DungeonEscape  0x00007ff7a2c70000 + 229d987         
+DungeonEscape  0x00007ff7a2c70000 + 229d5fd         
+DungeonEscape  0x00007ff7a2c70000 + 86c7fc1         
+DungeonEscape  0x00007ff7a2c70000 + 96d4d35         
+DungeonEscape  0x00007ff7a2c70000 + 983ae9b         
+DungeonEscape  0x00007ff7a2c70000 + 97f1d6d         
+DungeonEscape  0x00007ff7a2c70000 + 86f8416         
+DungeonEscape  0x00007ff7a2c70000 + 86f7e48         
+DungeonEscape  0x00007ff7a2c70000 + 9ab80f4         
+DungeonEscape  0x00007ff7a2c70000 + 9ad05df         
+DungeonEscape  0x00007ff7a2c70000 + 9ad078a         
+DungeonEscape  0x00007ff7a2c70000 + 9ad35b8         
+DungeonEscape  0x00007ff7a2c70000 + 9ae0bb4         
+DungeonEscape  0x00007ff7a2c70000 + e34a36a         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>21132</ThreadID>
+<ThreadName>GameThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>8728</ThreadID>
+<ThreadName>BackgroundThreadPool #0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>29496</ThreadID>
+<ThreadName>BackgroundThreadPool #1</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34436</ThreadID>
+<ThreadName>Foreground Worker #0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>6208</ThreadID>
+<ThreadName>Foreground Worker #1</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>4172</ThreadID>
+<ThreadName>Background Worker #0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 144dce7         
+DungeonEscape  0x00007ff7a2c70000 + 141b5f3         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>17028</ThreadID>
+<ThreadName>Foreground Worker (Standby #0)</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>33252</ThreadID>
+<ThreadName>Background Worker #1</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 162244          
+ntdll          0x00007ffb066a0000 + cee84           
+KERNELBASE     0x00007ffb037f0000 + 479a1           
+DungeonEscape  0x00007ff7a2c70000 + 16296a5         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>22964</ThreadID>
+<ThreadName>FHeartBeatThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 162244          
+ntdll          0x00007ffb066a0000 + cee84           
+KERNELBASE     0x00007ffb037f0000 + 479a1           
+DungeonEscape  0x00007ff7a2c70000 + 18326f2         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>32384</ThreadID>
+<ThreadName>FAsyncWriter_DungeonEscape</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 745e721         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>33760</ThreadID>
+<ThreadName>FMediaTicker</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 162714          
+KERNELBASE     0x00007ffb037f0000 + 42533           
+DungeonEscape  0x00007ff7a2c70000 + e030de4         
+DungeonEscape  0x00007ff7a2c70000 + e02e84d         
+DungeonEscape  0x00007ff7a2c70000 + 3321527         
+DungeonEscape  0x00007ff7a2c70000 + 332ded4         
+DungeonEscape  0x00007ff7a2c70000 + 332aa4b         
+DungeonEscape  0x00007ff7a2c70000 + 332b526         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>32248</ThreadID>
+<ThreadName>HttpManagerThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + c947e96         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>35228</ThreadID>
+<ThreadName>OnlineAsyncTaskThreadNull DefaultInstance(1)</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 165814          
+ntdll          0x00007ffb066a0000 + 9c1c3           
+KERNELBASE     0x00007ffb037f0000 + e1098           
+DungeonEscape  0x00007ff7a2c70000 + 1768dbc         
+DungeonEscape  0x00007ff7a2c70000 + 145642e         
+DungeonEscape  0x00007ff7a2c70000 + 1455c8c         
+DungeonEscape  0x00007ff7a2c70000 + 18398e2         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>14256</ThreadID>
+<ThreadName>OutputDeviceRedirector</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34868</ThreadID>
+<ThreadName>IOThreadPool #0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>21604</ThreadID>
+<ThreadName>IOThreadPool #1</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>29680</ThreadID>
+<ThreadName>IOThreadPool #2</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1629420         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>4176</ThreadID>
+<ThreadName>IOThreadPool #3</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 49d09f1         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>28484</ThreadID>
+<ThreadName>IoService</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 172819e         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>20360</ThreadID>
+<ThreadName>IoDispatcher</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 60ae625         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>2924</ThreadID>
+<ThreadName>RHIInterruptThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 60ae625         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>31252</ThreadID>
+<ThreadName>RHISubmissionThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>23628</ThreadID>
+<ThreadName>Background Worker #2</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 14466d8         
+DungeonEscape  0x00007ff7a2c70000 + 1446fde         
+DungeonEscape  0x00007ff7a2c70000 + 64cb0a3         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>5992</ThreadID>
+<ThreadName>RHIThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 14466d8         
+DungeonEscape  0x00007ff7a2c70000 + 1446fde         
+DungeonEscape  0x00007ff7a2c70000 + 64ca88c         
+DungeonEscape  0x00007ff7a2c70000 + 64cb1a9         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>20748</ThreadID>
+<ThreadName>RenderThread 0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 162244          
+ntdll          0x00007ffb066a0000 + cee84           
+KERNELBASE     0x00007ffb037f0000 + 479a1           
+DungeonEscape  0x00007ff7a2c70000 + 1a14952         
+DungeonEscape  0x00007ff7a2c70000 + 64cb2c7         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>29548</ThreadID>
+<ThreadName>RTHeartBeat 0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34612</ThreadID>
+<ThreadName>Background Worker #3</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>7592</ThreadID>
+<ThreadName>Background Worker #4</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34284</ThreadID>
+<ThreadName>Background Worker #5</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>2804</ThreadID>
+<ThreadName>Background Worker #6</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>7740</ThreadID>
+<ThreadName>Background Worker #7</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>30300</ThreadID>
+<ThreadName>Background Worker #8</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>15268</ThreadID>
+<ThreadName>Background Worker #9</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>30672</ThreadID>
+<ThreadName>Background Worker #10</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1426e65         
+DungeonEscape  0x00007ff7a2c70000 + 14577d9         
+DungeonEscape  0x00007ff7a2c70000 + 141b5fa         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>35372</ThreadID>
+<ThreadName>Background Worker #11</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + f06de5          
+nvgpucomp64    0x00007ffaf9910000 + ef06e4          
+nvgpucomp64    0x00007ffaf9910000 + eeeaba          
+nvgpucomp64    0x00007ffaf9910000 + f08208          
+nvgpucomp64    0x00007ffaf9910000 + f07911          
+nvgpucomp64    0x00007ffaf9910000 + ee7820          
+nvgpucomp64    0x00007ffaf9910000 + ee72ee          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cee29           
+nvwgf2umx      0x00007ffaf45d0000 + 7474f1          
+D3D12Core      0x00007ffa68510000 + caf09           
+D3D12Core      0x00007ffa68510000 + 16086           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 17be8           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d4615         
+DungeonEscape  0x00007ff7a2c70000 + 60d27d3         
+DungeonEscape  0x00007ff7a2c70000 + 60e543d         
+DungeonEscape  0x00007ff7a2c70000 + 602cba3         
+DungeonEscape  0x00007ff7a2c70000 + 6037c1c         
+DungeonEscape  0x00007ff7a2c70000 + 60a4134         
+DungeonEscape  0x00007ff7a2c70000 + 62f42f3         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>11988</ThreadID>
+<ThreadName>PSOPrecompilePool #0</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 1428367         
+DungeonEscape  0x00007ff7a2c70000 + 144db37         
+DungeonEscape  0x00007ff7a2c70000 + 141b5f3         
+DungeonEscape  0x00007ff7a2c70000 + 1629743         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>12372</ThreadID>
+<ThreadName>Background Worker (Standby #0)</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + f6064c          
+nvgpucomp64    0x00007ffaf9910000 + f5de0b          
+nvgpucomp64    0x00007ffaf9910000 + d33ee7          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cee29           
+nvwgf2umx      0x00007ffaf45d0000 + 7474f1          
+D3D12Core      0x00007ffa68510000 + caf09           
+D3D12Core      0x00007ffa68510000 + 16086           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 17be8           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d4615         
+DungeonEscape  0x00007ff7a2c70000 + 60d27d3         
+DungeonEscape  0x00007ff7a2c70000 + 60e543d         
+DungeonEscape  0x00007ff7a2c70000 + 602cba3         
+DungeonEscape  0x00007ff7a2c70000 + 6037c1c         
+DungeonEscape  0x00007ff7a2c70000 + 60a4134         
+DungeonEscape  0x00007ff7a2c70000 + 62f42f3         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>30936</ThreadID>
+<ThreadName>PSOPrecompilePool #1</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + d9143c          
+nvgpucomp64    0x00007ffaf9910000 + f6138d          
+nvgpucomp64    0x00007ffaf9910000 + d8b15a          
+nvgpucomp64    0x00007ffaf9910000 + ea2143          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34456</ThreadID>
+<ThreadName>PSOPrecompilePool #2</ThreadName>
+</Thread>
+<Thread><CallStack>nvwgf2umx      0x00007ffaf45d0000 + f4bf91          
+nvwgf2umx      0x00007ffaf45d0000 + f4bd9a          
+nvwgf2umx      0x00007ffaf45d0000 + f4afa7          
+nvwgf2umx      0x00007ffaf45d0000 + f4afcb          
+nvwgf2umx      0x00007ffaf45d0000 + 11813ad         
+nvwgf2umx      0x00007ffaf45d0000 + 11735e2         
+nvwgf2umx      0x00007ffaf45d0000 + 116ec41         
+nvwgf2umx      0x00007ffaf45d0000 + 1173a68         
+nvwgf2umx      0x00007ffaf45d0000 + d69935          
+nvwgf2umx      0x00007ffaf45d0000 + 13073e7         
+nvwgf2umx      0x00007ffaf45d0000 + 1306f3e         
+nvwgf2umx      0x00007ffaf45d0000 + 13079d7         
+nvwgf2umx      0x00007ffaf45d0000 + d6a085          
+nvwgf2umx      0x00007ffaf45d0000 + d68f59          
+nvwgf2umx      0x00007ffaf45d0000 + 797780          
+nvwgf2umx      0x00007ffaf45d0000 + 798886          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cee29           
+nvwgf2umx      0x00007ffaf45d0000 + 7474f1          
+D3D12Core      0x00007ffa68510000 + caf09           
+D3D12Core      0x00007ffa68510000 + 16086           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 17be8           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d4615         
+DungeonEscape  0x00007ff7a2c70000 + 60d27d3         
+DungeonEscape  0x00007ff7a2c70000 + 60e543d         
+DungeonEscape  0x00007ff7a2c70000 + 602cba3         
+DungeonEscape  0x00007ff7a2c70000 + 6037c1c         
+DungeonEscape  0x00007ff7a2c70000 + 60a4134         
+DungeonEscape  0x00007ff7a2c70000 + 62f42f3         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>12224</ThreadID>
+<ThreadName>PSOPrecompilePool #3</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + da90e5          
+nvgpucomp64    0x00007ffaf9910000 + dd81fd          
+nvgpucomp64    0x00007ffaf9910000 + dbbc90          
+nvgpucomp64    0x00007ffaf9910000 + dc5b5b          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cee29           
+nvwgf2umx      0x00007ffaf45d0000 + 7474f1          
+D3D12Core      0x00007ffa68510000 + caf09           
+D3D12Core      0x00007ffa68510000 + 16086           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 17be8           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d4615         
+DungeonEscape  0x00007ff7a2c70000 + 60d27d3         
+DungeonEscape  0x00007ff7a2c70000 + 60e543d         
+DungeonEscape  0x00007ff7a2c70000 + 602cba3         
+DungeonEscape  0x00007ff7a2c70000 + 6037c1c         
+DungeonEscape  0x00007ff7a2c70000 + 60a4134         
+DungeonEscape  0x00007ff7a2c70000 + 62f42f3         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>30644</ThreadID>
+<ThreadName>PSOPrecompilePool #4</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + f06e89          
+nvgpucomp64    0x00007ffaf9910000 + ef06e4          
+nvgpucomp64    0x00007ffaf9910000 + eee9c0          
+nvgpucomp64    0x00007ffaf9910000 + eedd4b          
+nvgpucomp64    0x00007ffaf9910000 + ee7b16          
+nvgpucomp64    0x00007ffaf9910000 + ee72ee          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>34692</ThreadID>
+<ThreadName>PSOPrecompilePool #5</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + e75595          
+nvgpucomp64    0x00007ffaf9910000 + e6de34          
+nvgpucomp64    0x00007ffaf9910000 + e6d135          
+nvgpucomp64    0x00007ffaf9910000 + d7a686          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>16256</ThreadID>
+<ThreadName>PSOPrecompilePool #6</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + e9f05c          
+nvgpucomp64    0x00007ffaf9910000 + d8b196          
+nvgpucomp64    0x00007ffaf9910000 + ea2143          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>5628</ThreadID>
+<ThreadName>PSOPrecompilePool #7</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + b832d9          
+nvgpucomp64    0x00007ffaf9910000 + e9ab7a          
+nvgpucomp64    0x00007ffaf9910000 + d86548          
+nvgpucomp64    0x00007ffaf9910000 + e9473d          
+nvgpucomp64    0x00007ffaf9910000 + d8a822          
+nvgpucomp64    0x00007ffaf9910000 + ea04d4          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>8812</ThreadID>
+<ThreadName>PSOPrecompilePool #8</ThreadName>
+</Thread>
+<Thread><CallStack>nvwgf2umx      0x00007ffaf45d0000 + 12a3c1f         
+nvwgf2umx      0x00007ffaf45d0000 + 12a226b         
+nvwgf2umx      0x00007ffaf45d0000 + 12a3d6d         
+nvwgf2umx      0x00007ffaf45d0000 + 12a73b1         
+nvwgf2umx      0x00007ffaf45d0000 + 12a6aee         
+nvwgf2umx      0x00007ffaf45d0000 + 12a9e40         
+nvwgf2umx      0x00007ffaf45d0000 + 12aa29d         
+nvwgf2umx      0x00007ffaf45d0000 + d69935          
+nvwgf2umx      0x00007ffaf45d0000 + 13073e7         
+nvwgf2umx      0x00007ffaf45d0000 + 1306f3e         
+nvwgf2umx      0x00007ffaf45d0000 + 13079d7         
+nvwgf2umx      0x00007ffaf45d0000 + d6a085          
+nvwgf2umx      0x00007ffaf45d0000 + d68f59          
+nvwgf2umx      0x00007ffaf45d0000 + 797780          
+nvwgf2umx      0x00007ffaf45d0000 + 798886          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>8932</ThreadID>
+<ThreadName>PSOPrecompilePool #9</ThreadName>
+</Thread>
+<Thread><CallStack>nvgpucomp64    0x00007ffaf9910000 + f5bc15          
+nvgpucomp64    0x00007ffaf9910000 + f5b636          
+nvgpucomp64    0x00007ffaf9910000 + dc5df7          
+nvgpucomp64    0x00007ffaf9910000 + d7b0d0          
+nvgpucomp64    0x00007ffaf9910000 + d7b1b7          
+nvgpucomp64    0x00007ffaf9910000 + b94279          
+nvgpucomp64    0x00007ffaf9910000 + b94345          
+nvgpucomp64    0x00007ffaf9910000 + 11c1d33         
+nvgpucomp64    0x00007ffaf9910000 + 11c08cf         
+nvgpucomp64    0x00007ffaf9910000 + 11d3b6a         
+nvgpucomp64    0x00007ffaf9910000 + 2fb785          
+nvgpucomp64    0x00007ffaf9910000 + 2f982f          
+nvgpucomp64    0x00007ffaf9910000 + 31195a          
+nvgpucomp64    0x00007ffaf9910000 + 2f9a67          
+nvwgf2umx      0x00007ffaf45d0000 + 7988ed          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cee29           
+nvwgf2umx      0x00007ffaf45d0000 + 7474f1          
+D3D12Core      0x00007ffa68510000 + caf09           
+D3D12Core      0x00007ffa68510000 + 16086           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 17be8           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d4615         
+DungeonEscape  0x00007ff7a2c70000 + 60d27d3         
+DungeonEscape  0x00007ff7a2c70000 + 60e543d         
+DungeonEscape  0x00007ff7a2c70000 + 602cba3         
+DungeonEscape  0x00007ff7a2c70000 + 6037c1c         
+DungeonEscape  0x00007ff7a2c70000 + 60a4134         
+DungeonEscape  0x00007ff7a2c70000 + 62f42f3         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>30396</ThreadID>
+<ThreadName>PSOPrecompilePool #10</ThreadName>
+</Thread>
+<Thread><CallStack>nvwgf2umx      0x00007ffaf45d0000 + f64f6c          
+nvwgf2umx      0x00007ffaf45d0000 + f61ed8          
+nvwgf2umx      0x00007ffaf45d0000 + f6239a          
+nvwgf2umx      0x00007ffaf45d0000 + f4f991          
+nvwgf2umx      0x00007ffaf45d0000 + 12a6dfc         
+nvwgf2umx      0x00007ffaf45d0000 + 12a6aee         
+nvwgf2umx      0x00007ffaf45d0000 + 12a9e40         
+nvwgf2umx      0x00007ffaf45d0000 + 12aa29d         
+nvwgf2umx      0x00007ffaf45d0000 + d69935          
+nvwgf2umx      0x00007ffaf45d0000 + 13073e7         
+nvwgf2umx      0x00007ffaf45d0000 + 1306f3e         
+nvwgf2umx      0x00007ffaf45d0000 + 13079d7         
+nvwgf2umx      0x00007ffaf45d0000 + d6a085          
+nvwgf2umx      0x00007ffaf45d0000 + d68f59          
+nvwgf2umx      0x00007ffaf45d0000 + 797780          
+nvwgf2umx      0x00007ffaf45d0000 + 798886          
+nvwgf2umx      0x00007ffaf45d0000 + 20c932          
+nvwgf2umx      0x00007ffaf45d0000 + 20d414          
+nvwgf2umx      0x00007ffaf45d0000 + 20c266          
+nvwgf2umx      0x00007ffaf45d0000 + 2089d4          
+nvwgf2umx      0x00007ffaf45d0000 + c9cdf           
+nvwgf2umx      0x00007ffaf45d0000 + 22b942          
+nvwgf2umx      0x00007ffaf45d0000 + cfb4c           
+nvwgf2umx      0x00007ffaf45d0000 + 748366          
+D3D12Core      0x00007ffa68510000 + cb355           
+D3D12Core      0x00007ffa68510000 + 1619a           
+D3D12Core      0x00007ffa68510000 + 7d1e0           
+D3D12Core      0x00007ffa68510000 + 50fdb           
+d3d12          0x00007ffaddb60000 + 1707            
+D3D12Core      0x00007ffa68510000 + 1b03b           
+D3D12Core      0x00007ffa68510000 + 176ce           
+D3D12Core      0x00007ffa68510000 + 7dcf5           
+DungeonEscape  0x00007ff7a2c70000 + 60d4397         
+DungeonEscape  0x00007ff7a2c70000 + 60d47ad         
+DungeonEscape  0x00007ff7a2c70000 + 60d3998         
+DungeonEscape  0x00007ff7a2c70000 + 60d28b3         
+DungeonEscape  0x00007ff7a2c70000 + 60e554f         
+DungeonEscape  0x00007ff7a2c70000 + 602cf8c         
+DungeonEscape  0x00007ff7a2c70000 + 6037b00         
+DungeonEscape  0x00007ff7a2c70000 + 60a4bef         
+DungeonEscape  0x00007ff7a2c70000 + 62f4635         
+DungeonEscape  0x00007ff7a2c70000 + 62ead5f         
+DungeonEscape  0x00007ff7a2c70000 + 62fb83d         
+DungeonEscape  0x00007ff7a2c70000 + 153a430         
+DungeonEscape  0x00007ff7a2c70000 + 153892e         
+DungeonEscape  0x00007ff7a2c70000 + 1629478         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>12888</ThreadID>
+<ThreadName>PSOPrecompilePool #11</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 2dfbd1f         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>5656</ThreadID>
+<ThreadName>FMessageBus.DefaultBus.Router</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a0edcd         
+DungeonEscape  0x00007ff7a2c70000 + e3a1abe         
+VCRUNTIME140   0x00007ffaed770000 + f47f            
+ntdll          0x00007ffb066a0000 + 1662ff          
+ntdll          0x00007ffb066a0000 + 12327           
+ntdll          0x00007ffb066a0000 + a961            
+KERNELBASE     0x00007ffb037f0000 + ca80a           
+DungeonEscape  0x00007ff7a2c70000 + 1a125ec         
+DungeonEscape  0x00007ff7a2c70000 + 1823622         
+DungeonEscape  0x00007ff7a2c70000 + 16dd8ea         
+DungeonEscape  0x00007ff7a2c70000 + 231fb41         
+DungeonEscape  0x00007ff7a2c70000 + 2301ab7         
+DungeonEscape  0x00007ff7a2c70000 + 813c9fb         
+DungeonEscape  0x00007ff7a2c70000 + 23142a7         
+DungeonEscape  0x00007ff7a2c70000 + 2318009         
+DungeonEscape  0x00007ff7a2c70000 + 231916c         
+DungeonEscape  0x00007ff7a2c70000 + 231a604         
+DungeonEscape  0x00007ff7a2c70000 + 2337307         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>true</IsCrashed>
+<Registers></Registers>
+<ThreadID>2476</ThreadID>
+<ThreadName>FAsyncLoadingThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 162244          
+ntdll          0x00007ffb066a0000 + cee84           
+KERNELBASE     0x00007ffb037f0000 + 479a1           
+DungeonEscape  0x00007ff7a2c70000 + 1a14952         
+DungeonEscape  0x00007ff7a2c70000 + 984d675         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>35348</ThreadID>
+<ThreadName>ScreenSaverInhibitor</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 486d8be         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>35592</ThreadID>
+<ThreadName>AudioMixerNullCallbackThread</ThreadName>
+</Thread>
+<Thread><CallStack>ntdll          0x00007ffb066a0000 + 161c44          
+KERNELBASE     0x00007ffb037f0000 + 3bc5f           
+DungeonEscape  0x00007ff7a2c70000 + 1a17af3         
+DungeonEscape  0x00007ff7a2c70000 + 486dcdf         
+DungeonEscape  0x00007ff7a2c70000 + 486dba9         
+DungeonEscape  0x00007ff7a2c70000 + 1a87ff8         
+DungeonEscape  0x00007ff7a2c70000 + 1a80c8f         
+KERNEL32       0x00007ffb045f0000 + 2e8d7           
+</CallStack>
+<IsCrashed>false</IsCrashed>
+<Registers></Registers>
+<ThreadID>9656</ThreadID>
+<ThreadName>AudioMixerRenderThread(1)</ThreadName>
+</Thread>
+</Threads>
+</RuntimeProperties>
+<PlatformProperties>
+<PlatformIsRunningWindows>1</PlatformIsRunningWindows>
+<PlatformIsRunningWine>false</PlatformIsRunningWine>
+<PlatformSupportsWindows11>true</PlatformSupportsWindows11>
+<IsRunningOnBattery>false</IsRunningOnBattery>
+<IsUsingBatterySaver>false</IsUsingBatterySaver>
+<PlatformCallbackResult>0</PlatformCallbackResult>
+<CrashTrigger>0</CrashTrigger>
+</PlatformProperties>
+<EngineData>
+<MatchingDPStatus>WindowsNo errors</MatchingDPStatus>
+<RHI.IntegratedGPU>false</RHI.IntegratedGPU>
+<RHI.DriverDenylisted>false</RHI.DriverDenylisted>
+<RHI.D3DDebug>false</RHI.D3DDebug>
+<RHI.DRED>false</RHI.DRED>
+<RHI.DREDMarkersOnly>false</RHI.DREDMarkersOnly>
+<RHI.DREDContext>false</RHI.DREDContext>
+<RHI.Aftermath>true</RHI.Aftermath>
+<RHI.RHIName>D3D12</RHI.RHIName>
+<RHI.AdapterName>NVIDIA GeForce RTX 3080</RHI.AdapterName>
+<RHI.UserDriverVersion>560.94</RHI.UserDriverVersion>
+<RHI.InternalDriverVersion>32.0.15.6094</RHI.InternalDriverVersion>
+<RHI.DriverDate>8-14-2024</RHI.DriverDate>
+<RHI.FeatureLevel>SM6</RHI.FeatureLevel>
+<RHI.GPUVendor>NVIDIA</RHI.GPUVendor>
+<RHI.DeviceId>220A</RHI.DeviceId>
+<DeviceProfile.Name>Windows</DeviceProfile.Name>
+</EngineData>
+<GameData>
+</GameData>
+</FGenericCrashContext>
