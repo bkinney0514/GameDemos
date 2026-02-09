@@ -1,0 +1,196 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#include "DungeonEscapeCharacter.h"
+#include "Animation/AnimInstance.h"
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "EnhancedInputComponent.h"
+#include "InputActionValue.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "DungeonEscape.h"
+#include "CollectibleItem.h"
+#include "Lock.h"
+
+ADungeonEscapeCharacter::ADungeonEscapeCharacter()
+{
+	// Set size for collision capsule
+	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
+	
+	// Create the first person mesh that will be viewed only by this character's owner
+	FirstPersonMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("First Person Mesh"));
+
+	FirstPersonMesh->SetupAttachment(GetMesh());
+	FirstPersonMesh->SetOnlyOwnerSee(true);
+	FirstPersonMesh->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::FirstPerson;
+	FirstPersonMesh->SetCollisionProfileName(FName("NoCollision"));
+
+	// Create the Camera Component	
+	FirstPersonCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("First Person Camera"));
+	FirstPersonCameraComponent->SetupAttachment(FirstPersonMesh, FName("head"));
+	FirstPersonCameraComponent->SetRelativeLocationAndRotation(FVector(-2.8f, 5.89f, 0.0f), FRotator(0.0f, 90.0f, -90.0f));
+	FirstPersonCameraComponent->bUsePawnControlRotation = true;
+	FirstPersonCameraComponent->bEnableFirstPersonFieldOfView = true;
+	FirstPersonCameraComponent->bEnableFirstPersonScale = true;
+	FirstPersonCameraComponent->FirstPersonFieldOfView = 70.0f;
+	FirstPersonCameraComponent->FirstPersonScale = 0.6f;
+
+	// configure the character comps
+	GetMesh()->SetOwnerNoSee(true);
+	GetMesh()->FirstPersonPrimitiveType = EFirstPersonPrimitiveType::WorldSpaceRepresentation;
+
+	GetCapsuleComponent()->SetCapsuleSize(34.0f, 96.0f);
+
+	// Configure character movement
+	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
+	GetCharacterMovement()->AirControl = 0.5f;
+}
+
+void ADungeonEscapeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	// Set up action bindings
+	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
+	{
+		// Jumping
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ADungeonEscapeCharacter::DoJumpStart);
+		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ADungeonEscapeCharacter::DoJumpEnd);
+
+		// Moving
+		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ADungeonEscapeCharacter::MoveInput);
+
+		// Looking/Aiming
+		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ADungeonEscapeCharacter::LookInput);
+		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &ADungeonEscapeCharacter::LookInput);
+
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &ADungeonEscapeCharacter::Interact);
+	}
+	else
+	{
+		UE_LOG(LogDungeonEscape, Error, TEXT("'%s' Failed to find an Enhanced Input Component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
+	}
+}
+void MyFunction(FVector& MyRef)
+{
+	MyRef.X = 10.0f;
+}
+
+void ADungeonEscapeCharacter::Interact()
+{
+	float CurrentTime = GetWorld()->TimeSeconds;
+	if (CurrentTime - LastInteractionTime < CooldownTime) {
+		return; // Ignore rapid clicks or holding interact button
+	}
+
+	FVector Start = FirstPersonCameraComponent->GetComponentLocation();
+	FVector End = Start + (FirstPersonCameraComponent->GetForwardVector() * MaxInteractionDistance);
+	//DrawDebugLine(GetWorld(), Start, End, FColor::Red, false, 5.0f);
+
+	FCollisionShape InteractionSphere = FCollisionShape::MakeSphere(InteractionSphereRadius);
+	//DrawDebugSphere(GetWorld(), End, InteractionSphereRadius, 20, FColor::Blue, false, 5.0f);
+
+	FHitResult HitResult;
+	bool HasHit = GetWorld()->SweepSingleByChannel(
+		HitResult, 
+		Start, End,
+		FQuat::Identity, 
+		ECC_GameTraceChannel2, 
+		InteractionSphere
+	);
+
+	if (HasHit) {
+		AActor* HitActor = HitResult.GetActor();
+		
+		if (HitActor->ActorHasTag("Collectible")) {
+			// Hit Actor is a collectible item
+			ACollectibleItem* CollectibleItem = Cast<ACollectibleItem>(HitActor);
+			if (CollectibleItem) {
+				ItemList.Add(CollectibleItem->ItemName);
+				CollectibleItem->Destroy();
+			}
+		}
+		else if (HitActor->ActorHasTag("Lock")) {
+			// Hit Actor is a lock
+			ALock* LockActor = Cast<ALock>(HitActor);
+			if (LockActor) {
+				// 1 - Is the lock empty?
+				// 2 - Do we have KeyItemName in our ItemList?
+				// 3 - If so, removed that item from our list
+				// 4 - Activate the lock
+				if (!LockActor->GetIsKeyPlaced()) {
+					// Lock is empty
+					int32 ItemsRemoved = ItemList.RemoveSingle(LockActor->KeyItemName);
+					if (ItemsRemoved) {
+						LockActor->SetIsKeyPlaced(true);
+					}
+					else {
+						UE_LOG(LogTemp, Display, TEXT("key item not in inventory"));
+					}
+				}
+				else {
+					ItemList.Add(LockActor->KeyItemName);
+					LockActor->SetIsKeyPlaced(false);
+				}
+				
+			}
+		}
+	}
+	else {
+		UE_LOG(LogTemp, Display, TEXT("No Actor Hit"));
+	}
+	LastInteractionTime = CurrentTime;
+}
+
+
+
+
+void ADungeonEscapeCharacter::MoveInput(const FInputActionValue& Value)
+{
+	// get the Vector2D move axis
+	FVector2D MovementVector = Value.Get<FVector2D>();
+
+	// pass the axis values to the move input
+	DoMove(MovementVector.X, MovementVector.Y);
+
+}
+
+void ADungeonEscapeCharacter::LookInput(const FInputActionValue& Value)
+{
+	// get the Vector2D look axis
+	FVector2D LookAxisVector = Value.Get<FVector2D>();
+
+	// pass the axis values to the aim input
+	DoAim(LookAxisVector.X, LookAxisVector.Y);
+
+}
+
+void ADungeonEscapeCharacter::DoAim(float Yaw, float Pitch)
+{
+	if (GetController())
+	{
+		// pass the rotation inputs
+		AddControllerYawInput(Yaw);
+		AddControllerPitchInput(Pitch);
+	}
+}
+
+void ADungeonEscapeCharacter::DoMove(float Right, float Forward)
+{
+	if (GetController())
+	{
+		// pass the move inputs
+		AddMovementInput(GetActorRightVector(), Right);
+		AddMovementInput(GetActorForwardVector(), Forward);
+	}
+}
+
+void ADungeonEscapeCharacter::DoJumpStart()
+{
+	// pass Jump to the character
+	Jump();
+}
+
+void ADungeonEscapeCharacter::DoJumpEnd()
+{
+	// pass StopJumping to the character
+	StopJumping();
+}
