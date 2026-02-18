@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Maps/Level_1.umap",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Tank.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_GameMode.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IMC_Default.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Move.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Turn.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Tower.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Rotate.uasset"
+			]
+		}
+	]
+}

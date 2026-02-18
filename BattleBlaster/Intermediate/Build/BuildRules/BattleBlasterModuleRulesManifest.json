@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealProjects\\GameDemos\\BattleBlaster\\Source\\BattleBlaster\\BattleBlaster.Build.cs",
+		"C:\\UnrealProjects\\GameDemos\\BattleBlaster\\Source\\BattleBlaster.Target.cs",
+		"C:\\UnrealProjects\\GameDemos\\BattleBlaster\\Source\\BattleBlasterEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.1"
+}
