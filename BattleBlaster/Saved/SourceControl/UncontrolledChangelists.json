@@ -12,6 +12,8 @@
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Move.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Turn.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Tower.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Fire.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Projectile.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Rotate.uasset"
 			]
 		}
