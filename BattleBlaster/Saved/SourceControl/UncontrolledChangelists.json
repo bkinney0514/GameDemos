@@ -14,6 +14,11 @@
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Tower.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Fire.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_Projectile.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_BattleBlasterPlayerController.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_BattleBlasterGameInstance.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Maps/Level_2.umap",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Maps/Level_3.umap",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/WBP_ScreenMessage.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Rotate.uasset"
 			]
 		}

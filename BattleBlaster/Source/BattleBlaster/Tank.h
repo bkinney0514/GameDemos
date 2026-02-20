@@ -55,6 +55,14 @@ public:
 	void MoveInput(const FInputActionValue& Value);
 
 	void TurnInput(const FInputActionValue& Value);
+	
+	void HandleDestruction();
+
+	void SetPlayerEnabled(bool Enabled);
+
+	bool IsAlive = true;
+
+	APlayerController* PlayerController;
 
 	UPROPERTY(EditAnywhere)
 	float Speed = 300.0f;

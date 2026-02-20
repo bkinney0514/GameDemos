@@ -6,13 +6,7 @@
         "PCH": "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\x64\\battleblastereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
         "Includes": [
             "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\battleblaster\\definitions.battleblaster.h",
-            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\battleblastergamemode.gen.cpp",
-            "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\battleblastergamemode.h",
-            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
-            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
-            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
-            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\tank.h",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\basepawn.gen.cpp",
             "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\basepawn.h",
             "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\projectile.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\projectilemovementcomponent.h",
@@ -25,6 +19,12 @@
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\capsulecomponent.generated.h",
             "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\basepawn.generated.h",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\healthcomponent.gen.cpp",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\healthcomponent.h",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\healthcomponent.generated.h",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\projectile.gen.cpp",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\tank.gen.cpp",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\tank.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\springarmcomponent.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\springarmcomponent.generated.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedinputsubsystems.h",
@@ -54,7 +54,9 @@
             "c:\\program files\\epic games\\ue_5.6\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedinputcomponent.h",
             "c:\\program files\\epic games\\ue_5.6\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputcomponent.generated.h",
             "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\tank.generated.h",
-            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\battleblastergamemode.generated.h"
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\tower.gen.cpp",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\source\\battleblaster\\tower.h",
+            "c:\\unrealprojects\\gamedemos\\battleblaster\\intermediate\\build\\win64\\unrealeditor\\inc\\battleblaster\\uht\\tower.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
