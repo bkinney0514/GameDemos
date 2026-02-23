@@ -1,6 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Projectile.h"
+#include "Kismet/GameplayStatics.h"
+
 #include "BasePawn.h"
 
 // Sets default values
@@ -53,7 +55,16 @@ void ABasePawn::Fire()
 
 void ABasePawn::HandleDestruction()
 {
-	UE_LOG(LogTemp, Display, TEXT("BasePawn HandleDestruction"));
+	if (DeathParticles) {
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), DeathParticles, GetActorLocation(), GetActorRotation());
+	}
+	if (DeathSound) {
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), DeathSound, GetActorLocation());
+	}
+	if (DeathCameraShakeClass) {
+		APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+		PlayerController->ClientStartCameraShake(DeathCameraShakeClass);
+	}
 }
 
 

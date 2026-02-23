@@ -19,6 +19,9 @@
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Maps/Level_2.umap",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Maps/Level_3.umap",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/WBP_ScreenMessage.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_HitCameraShake.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/BP_DeathCameraShake.uasset",
+				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Blueprints/WBP_TankHealth.uasset",
 				"C:/UnrealProjects/GameDemos/BattleBlaster/Content/Input/IA_Rotate.uasset"
 			]
 		}

@@ -60,7 +60,7 @@ public:
 
 	void SetPlayerEnabled(bool Enabled);
 
-	bool IsAlive = true;
+	bool IsAlive = false;
 
 	APlayerController* PlayerController;
 
