@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealProjects\\GameDemos\\ShooterSam\\Source\\ShooterSam\\ShooterSam.Build.cs",
+		"C:\\UnrealProjects\\GameDemos\\ShooterSam\\Source\\ShooterSam.Target.cs",
+		"C:\\UnrealProjects\\GameDemos\\ShooterSam\\Source\\ShooterSamEditor.Target.cs"
+	],
+	"EngineVersion": "5.6.1"
+}

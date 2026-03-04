@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealprojects\\gamedemos\\shootersam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootersam\\uht\\combatcheckpointvolume.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealprojects\\gamedemos\\shootersam\\intermediate\\build\\win64\\x64\\shootersameditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealprojects\\gamedemos\\shootersam\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\shootersam\\definitions.shootersam.h",
+            "c:\\unrealprojects\\gamedemos\\shootersam\\source\\shootersam\\variant_combat\\gameplay\\combatcheckpointvolume.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "c:\\unrealprojects\\gamedemos\\shootersam\\intermediate\\build\\win64\\unrealeditor\\inc\\shootersam\\uht\\combatcheckpointvolume.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
