@@ -77,6 +77,9 @@ void AShooterSamCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
+	UE_LOG(LogTemp, Display, TEXT("X Movement: %f"), MovementVector.X);
+	UE_LOG(LogTemp, Display, TEXT("Y Movement: %f"), MovementVector.Y);
+
 	// route the input
 	DoMove(MovementVector.X, MovementVector.Y);
 }
@@ -85,6 +88,8 @@ void AShooterSamCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
+	UE_LOG(LogTemp, Display, TEXT("X component: %f"), LookAxisVector.X);
+	UE_LOG(LogTemp, Display, TEXT("Y component: %f"), LookAxisVector.Y);
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);

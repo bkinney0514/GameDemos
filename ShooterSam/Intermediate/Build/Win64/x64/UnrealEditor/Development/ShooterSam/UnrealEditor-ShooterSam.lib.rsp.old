@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ShooterSam.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/ShooterSamEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Module.ShooterSam.1.cpp.obj"
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Module.ShooterSam.2.cpp.obj"
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Module.ShooterSam.3.cpp.obj"
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Default.rc2.res"
+/OUT:"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/UnrealEditor-ShooterSam.lib"

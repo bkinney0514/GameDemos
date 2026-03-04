@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/TestLevel.umap",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/Maps/TestLevel.umap",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/BP_ShooterCharacter.uasset",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/Blueprints/BP_ShooterCharacter.uasset",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/Blueprints/BP_ShooterSamGameMode.uasset",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/Blueprints/BP_ShooterSamPlayerController.uasset"
+			]
+		}
+	]
+}
