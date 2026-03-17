@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeShooterAI() {}
 
 // ********** Begin Cross Module References ********************************************************
 AIMODULE_API UClass* Z_Construct_UClass_AAIController();
+AIMODULE_API UClass* Z_Construct_UClass_UBehaviorTree_NoRegister();
 SHOOTERSAM_API UClass* Z_Construct_UClass_AShooterAI();
 SHOOTERSAM_API UClass* Z_Construct_UClass_AShooterAI_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ShooterSam();
@@ -62,13 +63,24 @@ struct Z_Construct_UClass_AShooterAI_Statics
 		{ "IncludePath", "ShooterAI.h" },
 		{ "ModuleRelativePath", "ShooterAI.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnemyAIBehaviorTree_MetaData[] = {
+		{ "Category", "ShooterAI" },
+		{ "ModuleRelativePath", "ShooterAI.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnemyAIBehaviorTree;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AShooterAI>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterAI_Statics::NewProp_EnemyAIBehaviorTree = { "EnemyAIBehaviorTree", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterAI, EnemyAIBehaviorTree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnemyAIBehaviorTree_MetaData), NewProp_EnemyAIBehaviorTree_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterAI_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAI_Statics::NewProp_EnemyAIBehaviorTree,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShooterAI_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShooterAI_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AAIController,
 	(UObject* (*)())Z_Construct_UPackage__Script_ShooterSam,
@@ -80,11 +92,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AShooterAI_Statics::Cla
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_AShooterAI_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_AShooterAI_Statics::PropPointers),
 	0,
 	0x009003A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AShooterAI_Statics::Class_MetaDataParams), Z_Construct_UClass_AShooterAI_Statics::Class_MetaDataParams)
@@ -106,10 +118,10 @@ AShooterAI::~AShooterAI() {}
 struct Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterAI_h__Script_ShooterSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShooterAI, AShooterAI::StaticClass, TEXT("AShooterAI"), &Z_Registration_Info_UClass_AShooterAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAI), 816871067U) },
+		{ Z_Construct_UClass_AShooterAI, AShooterAI::StaticClass, TEXT("AShooterAI"), &Z_Registration_Info_UClass_AShooterAI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAI), 169243895U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterAI_h__Script_ShooterSam_2856614391(TEXT("/Script/ShooterSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterAI_h__Script_ShooterSam_4170894395(TEXT("/Script/ShooterSam"),
 	Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterAI_h__Script_ShooterSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterAI_h__Script_ShooterSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

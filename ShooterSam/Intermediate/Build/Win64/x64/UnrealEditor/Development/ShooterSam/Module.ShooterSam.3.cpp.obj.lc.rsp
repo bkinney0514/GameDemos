@@ -1,12 +1,12 @@
-"C:/UnrealProjects/GameDemos/ShooterSam/Source/ShooterSam/HUDWidget.cpp"
+"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Module.ShooterSam.3.cpp"
 @"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/ShooterSam.Shared.rsp"
 /FI"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/ShooterSamEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
 /FI"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Definitions.ShooterSam.h"
 /Yu"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/ShooterSamEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h"
 /Fp"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/ShooterSamEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.pch"
-/Fo"C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/HUDWidget.cpp.obj"
-/experimental:log "C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/HUDWidget.cpp.sarif"
-/sourceDependencies "C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/HUDWidget.cpp.dep.json"
+/Fo"C:\UnrealProjects\GameDemos\ShooterSam\Intermediate\Build\Win64\x64\UnrealEditor\Development\ShooterSam\Module.ShooterSam.3.cpp.lc.obj"
+/experimental:log "C:/UnrealProjects/GameDemos/ShooterSam/Intermediate/Build/Win64/x64/UnrealEditor/Development/ShooterSam/Module.ShooterSam.3.cpp.sarif"
+/sourceDependencies"C:\UnrealProjects\GameDemos\ShooterSam\Intermediate\Build\Win64\x64\UnrealEditor\Development\ShooterSam\Module.ShooterSam.3.cpp.lc.dep.json"
 /d2ssa-cfg-question-
 /Zc:inline
 /nologo

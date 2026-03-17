@@ -31,6 +31,8 @@
 				"C:/UnrealProjects/GameDemos/ShooterSam/Content/ParagonWraith/FX/Materials/Smoke/M_WispySmokeTest.uasset",
 				"C:/UnrealProjects/GameDemos/ShooterSam/Content/ParagonWraith/FX/Materials/Smoke/DirectionalLit/M_residualMuzzleSmoke_Inst.uasset",
 				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/AI/BP_ShooterAI.uasset",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/AI/BT_EnemyAI.uasset",
+				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/AI/BB_EnemyAI.uasset",
 				"C:/UnrealProjects/GameDemos/ShooterSam/Content/MyStuff/BP_ShooterCharacter.uasset"
 			]
 		}
