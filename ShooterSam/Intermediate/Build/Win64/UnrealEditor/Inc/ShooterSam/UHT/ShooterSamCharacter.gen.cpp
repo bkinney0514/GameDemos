@@ -12,10 +12,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeShooterSamCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+SHOOTERSAM_API UClass* Z_Construct_UClass_AGun_NoRegister();
 SHOOTERSAM_API UClass* Z_Construct_UClass_AShooterSamCharacter();
 SHOOTERSAM_API UClass* Z_Construct_UClass_AShooterSamCharacter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ShooterSam();
@@ -201,6 +206,71 @@ DEFINE_FUNCTION(AShooterSamCharacter::execDoMove)
 }
 // ********** End Class AShooterSamCharacter Function DoMove ***************************************
 
+// ********** Begin Class AShooterSamCharacter Function OnDamageTaken ******************************
+struct Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics
+{
+	struct ShooterSamCharacter_eventOnDamageTaken_Parms
+	{
+		AActor* DamagedActor;
+		float Damage;
+		const UDamageType* DamageType;
+		AController* InstigatedBy;
+		AActor* DamageCauser;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ShooterSamCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamagedActor;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageType;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InstigatedBy;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageCauser;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamagedActor = { "DamagedActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterSamCharacter_eventOnDamageTaken_Parms, DamagedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterSamCharacter_eventOnDamageTaken_Parms, Damage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamageType = { "DamageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterSamCharacter_eventOnDamageTaken_Parms, DamageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageType_MetaData), NewProp_DamageType_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_InstigatedBy = { "InstigatedBy", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterSamCharacter_eventOnDamageTaken_Parms, InstigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamageCauser = { "DamageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterSamCharacter_eventOnDamageTaken_Parms, DamageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamagedActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_Damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamageType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_InstigatedBy,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::NewProp_DamageCauser,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AShooterSamCharacter, nullptr, "OnDamageTaken", Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::PropPointers), sizeof(Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::ShooterSamCharacter_eventOnDamageTaken_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::Function_MetaDataParams), Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::ShooterSamCharacter_eventOnDamageTaken_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AShooterSamCharacter::execOnDamageTaken)
+{
+	P_GET_OBJECT(AActor,Z_Param_DamagedActor);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Damage);
+	P_GET_OBJECT(UDamageType,Z_Param_DamageType);
+	P_GET_OBJECT(AController,Z_Param_InstigatedBy);
+	P_GET_OBJECT(AActor,Z_Param_DamageCauser);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnDamageTaken(Z_Param_DamagedActor,Z_Param_Damage,Z_Param_DamageType,Z_Param_InstigatedBy,Z_Param_DamageCauser);
+	P_NATIVE_END;
+}
+// ********** End Class AShooterSamCharacter Function OnDamageTaken ********************************
+
 // ********** Begin Class AShooterSamCharacter *****************************************************
 void AShooterSamCharacter::StaticRegisterNativesAShooterSamCharacter()
 {
@@ -210,6 +280,7 @@ void AShooterSamCharacter::StaticRegisterNativesAShooterSamCharacter()
 		{ "DoJumpStart", &AShooterSamCharacter::execDoJumpStart },
 		{ "DoLook", &AShooterSamCharacter::execDoLook },
 		{ "DoMove", &AShooterSamCharacter::execDoMove },
+		{ "OnDamageTaken", &AShooterSamCharacter::execOnDamageTaken },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -320,6 +391,28 @@ struct Z_Construct_UClass_AShooterSamCharacter_Statics
 		{ "ToolTip", "Mouse Look Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShootAction_MetaData[] = {
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Mouse Look Input Action */" },
+#endif
+		{ "ModuleRelativePath", "ShooterSamCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Mouse Look Input Action" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GunClass_MetaData[] = {
+		{ "Category", "ShooterSamCharacter" },
+		{ "ModuleRelativePath", "ShooterSamCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
+		{ "Category", "ShooterSamCharacter" },
+		{ "ModuleRelativePath", "ShooterSamCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IsAlive_MetaData[] = {
+		{ "Category", "ShooterSamCharacter" },
+		{ "ModuleRelativePath", "ShooterSamCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -327,6 +420,11 @@ struct Z_Construct_UClass_AShooterSamCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootAction;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_GunClass;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
+	static void NewProp_IsAlive_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsAlive;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -334,6 +432,7 @@ struct Z_Construct_UClass_AShooterSamCharacter_Statics
 		{ &Z_Construct_UFunction_AShooterSamCharacter_DoJumpStart, "DoJumpStart" }, // 1774658409
 		{ &Z_Construct_UFunction_AShooterSamCharacter_DoLook, "DoLook" }, // 521660292
 		{ &Z_Construct_UFunction_AShooterSamCharacter_DoMove, "DoMove" }, // 2455098782
+		{ &Z_Construct_UFunction_AShooterSamCharacter_OnDamageTaken, "OnDamageTaken" }, // 650622467
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -347,6 +446,14 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterSamCha
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_ShootAction = { "ShootAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, ShootAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootAction_MetaData), NewProp_ShootAction_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_GunClass = { "GunClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, GunClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AGun_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GunClass_MetaData), NewProp_GunClass_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterSamCharacter, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
+void Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_IsAlive_SetBit(void* Obj)
+{
+	((AShooterSamCharacter*)Obj)->IsAlive = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_IsAlive = { "IsAlive", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AShooterSamCharacter), &Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_IsAlive_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IsAlive_MetaData), NewProp_IsAlive_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterSamCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_FollowCamera,
@@ -354,6 +461,10 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterS
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MouseLookAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_ShootAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_GunClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_MaxHealth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterSamCharacter_Statics::NewProp_IsAlive,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShooterSamCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShooterSamCharacter_Statics::DependentSingletons[])() = {
@@ -392,10 +503,10 @@ AShooterSamCharacter::~AShooterSamCharacter() {}
 struct Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h__Script_ShooterSam_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShooterSamCharacter, AShooterSamCharacter::StaticClass, TEXT("AShooterSamCharacter"), &Z_Registration_Info_UClass_AShooterSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterSamCharacter), 3135570896U) },
+		{ Z_Construct_UClass_AShooterSamCharacter, AShooterSamCharacter::StaticClass, TEXT("AShooterSamCharacter"), &Z_Registration_Info_UClass_AShooterSamCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterSamCharacter), 2824547381U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h__Script_ShooterSam_3467471263(TEXT("/Script/ShooterSam"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h__Script_ShooterSam_2723312013(TEXT("/Script/ShooterSam"),
 	Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h__Script_ShooterSam_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h__Script_ShooterSam_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

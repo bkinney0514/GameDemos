@@ -16,8 +16,13 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class AController;
+class UDamageType;
+
 // ********** Begin Class AShooterSamCharacter *****************************************************
-#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnDamageTaken); \
 	DECLARE_FUNCTION(execDoJumpEnd); \
 	DECLARE_FUNCTION(execDoJumpStart); \
 	DECLARE_FUNCTION(execDoLook); \
@@ -26,7 +31,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 SHOOTERSAM_API UClass* Z_Construct_UClass_AShooterSamCharacter_NoRegister();
 
-#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAShooterSamCharacter(); \
 	friend struct Z_Construct_UClass_AShooterSamCharacter_Statics; \
@@ -37,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(AShooterSamCharacter)
 
 
-#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AShooterSamCharacter(AShooterSamCharacter&&) = delete; \
 	AShooterSamCharacter(const AShooterSamCharacter&) = delete; \
@@ -47,13 +52,13 @@ public: \
 	NO_API virtual ~AShooterSamCharacter();
 
 
-#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_21_PROLOG
-#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_GENERATED_BODY \
+#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_22_PROLOG
+#define FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_INCLASS_NO_PURE_DECLS \
-	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_24_ENHANCED_CONSTRUCTORS \
+	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_INCLASS_NO_PURE_DECLS \
+	FID_UnrealProjects_GameDemos_ShooterSam_Source_ShooterSam_ShooterSamCharacter_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

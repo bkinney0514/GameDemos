@@ -11,6 +11,7 @@
     <None Include="..\..\Source\ShooterSamEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -32,6 +33,24 @@
     <Filter Include="Source\ShooterSam">
       <UniqueIdentifier>{259400C2-E8B8-3938-AB8B-BFF846AEEA4D}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShooterSam\Gun.cpp">
+      <Filter>Source\ShooterSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterSam\Gun.h">
+      <Filter>Source\ShooterSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterSam\HUDWidget.cpp">
+      <Filter>Source\ShooterSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterSam\HUDWidget.h">
+      <Filter>Source\ShooterSam</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterSam\ShooterAI.cpp">
+      <Filter>Source\ShooterSam</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterSam\ShooterAI.h">
+      <Filter>Source\ShooterSam</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ShooterSam\ShooterSam.Build.cs">
       <Filter>Source\ShooterSam</Filter>
     </None>

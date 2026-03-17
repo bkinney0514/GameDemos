@@ -65,6 +65,9 @@ void AShooterSamCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AShooterSamCharacter::Look);
+
+		// Shooting
+		EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Started, this, &AShooterSamCharacter::Shoot);
 	}
 	else
 	{
@@ -77,9 +80,6 @@ void AShooterSamCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
-	UE_LOG(LogTemp, Display, TEXT("X Movement: %f"), MovementVector.X);
-	UE_LOG(LogTemp, Display, TEXT("Y Movement: %f"), MovementVector.Y);
-
 	// route the input
 	DoMove(MovementVector.X, MovementVector.Y);
 }
@@ -88,11 +88,27 @@ void AShooterSamCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
-	UE_LOG(LogTemp, Display, TEXT("X component: %f"), LookAxisVector.X);
-	UE_LOG(LogTemp, Display, TEXT("Y component: %f"), LookAxisVector.Y);
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
+}
+
+void AShooterSamCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	OnTakeAnyDamage.AddDynamic(this, &AShooterSamCharacter::OnDamageTaken);
+
+	Health = MaxHealth;
+
+	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+	if (Gun) {
+		Gun->SetOwner(this);
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+		Gun->OwnerController = GetController();
+	}
+
 }
 
 void AShooterSamCharacter::DoMove(float Right, float Forward)
@@ -135,4 +151,27 @@ void AShooterSamCharacter::DoJumpEnd()
 {
 	// signal the character to stop jumping
 	StopJumping();
+}
+
+void AShooterSamCharacter::Shoot()
+{
+	if (Gun) {
+		Gun->PullTrigger();
+	}
+
+}
+
+void AShooterSamCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
+{
+	
+	if (IsAlive) {
+		Health -= Damage;
+		UE_LOG(LogTemp, Display, TEXT("Damage taken: %f"), Damage);
+		if (Health <= 0.0f) {
+			IsAlive = false;
+			Health = 0.0f;
+			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			UE_LOG(LogTemp, Display, TEXT("Character %s is dead!"), *GetActorNameOrLabel());
+		}
+	}
 }
